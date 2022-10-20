@@ -7,33 +7,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- custom title script -->
     {% if title %}
-    <title>My Blog - {{ title }}</title>
+    <title>Keanu's Blog - {{ title }}</title>
     {% else %}
-    <title>My Blog</title>
+    <title>Keanu's Blog</title>
     {% endif %}
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/bootstrap.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/icons/bootstrap-icons.css' %}">
-
     <!-- homepage css -->
     <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
 </head>
 
 <body>
-    <div class="container">
-        <!-- navbar -->
-        
-        <!-- content -->
+    <!-- navbar -->
+    <nav class="navbar">
+        <!-- logo -->
+        <div class="logo"><a href="#">Keanu's Blog</a></div>
+        <!-- nav menu -->
+        <ul class="nav-links">
+            <!-- nav menus -->
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Contact</a></li>
+            <li class="nav-link"><a href="#">Log Out</a></li>
+        </ul>
+    </nav>
+    <!-- content -->
+    <div class="content">
         {% block content %}
         {% endblock %}
     </div>
-
-    <!-- bootstrap js -->
-    <script src="{% static 'bootstrap/bootstrap.bundle.js' %}"></script>
 </body>
 
 </html>

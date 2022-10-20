@@ -1,5 +1,3 @@
-from turtle import pos
-from django.http import HttpResponse
 from django.shortcuts import render
 
 # Dummy posts

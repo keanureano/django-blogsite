@@ -1,0 +1,69 @@
+/* basic css utilities */
+:root {
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --nav: teal;
+    --nav-hover: #4c9e9e;
+    --gutter-x: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+/* navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--nav);
+    color: white;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: calc(var(--gutter-x) * 6);
+}
+
+.nav-links {
+    margin-right: calc(var(--gutter-x) * 6);
+}
+
+.nav-link a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+/** content styling **/
+.content {
+    display: block;
+    width: 100%;
+    padding-right: calc(var(--gutter-x) * 8);
+    padding-left: calc(var(--gutter-x) * 8);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/** post styling **/
+.post {
+    padding-top: 1rem;
+}
