@@ -23,7 +23,7 @@
     <!-- navbar -->
     <div class="navbar">
         <ul>
-            <a href="/" id="logo"><i class="bi bi-envelope-paper"></i>B.Log</a>
+            <a href="/" class="logo"><i class="bi bi-envelope-paper"></i>B.Log</a>
             <li class="nav-link"><a href="/">Home</a></li>
             <li class="nav-link"><a href="about/">About</a></li>
         </ul>
@@ -35,8 +35,22 @@
     </div>
     <!-- content -->
     <div class="content">
-        {% block content %}
-        {% endblock %}
+        <div class="col left">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div class="col right">
+            <div class="sidebar">
+                <h1>The Sidebar</h1>
+                <p>You can put any info here.</p>
+                <table id="sidebar-table">
+                    <tr><td><a href="#">Latest Posts</a></td></tr>
+                    <tr><td><a href="#">Favorites</a></td></tr>
+                    <tr><td><a href="#">Announcements</a></td></tr>
+                    <tr><td><a href="#">Calendars</a></td></tr>
+                </table>
+            </div>
+        </div>
     </div>
 </body>
 
