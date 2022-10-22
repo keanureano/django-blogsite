@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- required meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom title script -->
+    {% if title %}
+    <title>B.Log - {{ title }}</title>
+    {% else %}
+    <title>B.Log</title>
+    {% endif %}
+    <!-- homepage css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+    <!-- bootstrap icon css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/icons/bootstrap-icons.css' %}">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <ul>
+            <a href="/" id="logo"><i class="bi bi-envelope-paper"></i>B.Log</a>
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="about/">About</a></li>
+        </ul>
+        <ul>
+            <li class="nav-link"><a href="#">Login</a></li>
+            <li class="nav-link"><a href="#">Register</a></li>
+            <li class="nav-link"><a href="#">Logout</a></li>
+        </ul>
+    </div>
+    <!-- content -->
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>
