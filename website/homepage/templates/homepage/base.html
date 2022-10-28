@@ -23,26 +23,33 @@
     <!-- navbar -->
     <div class="navbar">
         <ul>
-            <a href="/" class="logo"><i class="bi bi-envelope-paper"></i>B.Log</a>
-            <li class="nav-link"><a href="/">Home</a></li>
-            <li class="nav-link"><a href="about/">About</a></li>
+            <a href="{% url 'homepage-home' %}" class="logo"><i class="bi bi-envelope-paper"></i>B.Log</a>
+            <li class="nav-link"><a href="{% url 'homepage-home' %}">Home</a></li>
+            <li class="nav-link"><a href="{% url 'homepage-about' %}">About</a></li>
         </ul>
         <ul>
-            <li class="nav-link"><a href="#">Login</a></li>
-            <li class="nav-link"><a href="#">Register</a></li>
+            <li class="nav-link"><a href="{% url 'register' %}">Register</a></li>
+            <li class="nav-link"><a href="#">Login</a></li>            
             <li class="nav-link"><a href="#">Logout</a></li>
         </ul>
     </div>
     <!-- content -->
     <div class="content">
         <div class="col left">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
             {% block content %}
             {% endblock %}
         </div>
         <div class="col right">
             <div class="sidebar">
                 <h1>The Sidebar</h1>
-                <p>You can put any info here.</p>
+                <p>Get the latest news about this website.</p>
                 <table id="sidebar-table">
                     <tr><td><a href="#">Latest Posts</a></td></tr>
                     <tr><td><a href="#">Favorites</a></td></tr>

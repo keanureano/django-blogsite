@@ -1,7 +1,10 @@
 /* basic css utilities */
 :root {
-    --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+        "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --color-primary: #008080;
+    --color-secondary: #4682b4;
     --gutter-x: 2vw;
 }
 
@@ -123,8 +126,32 @@ li {
     transition: 0.1s ease;
 }
 
+.metadata {
+    display: flex;
+    align-items: baseline;
+}
+
+.post hr {
+    margin: 0.5rem 0;
+}
+
+.post h1 {
+    font-weight: normal;
+}
+
+.post h3 {
+    color: var(--color-secondary);
+    font-weight: normal;
+    margin-right: 0.75rem;
+}
+
+.post h6 {
+    color: #444;
+    font-weight: normal;
+}
+
 .post p {
-    margin-top: 1vw;
+    margin-top: 0.5rem;
     color: #444;
 }
 
@@ -140,8 +167,13 @@ li {
     padding: 1rem;
     font-size: calc(10px + 0.5vw);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-    transform: scale(.995);
+    transform: scale(.99);
     transition: 0.1s ease;
+}
+
+.sidebar h1 {
+    font-weight: normal;
+    color: var(--color-secondary);
 }
 
 .sidebar p {
@@ -172,6 +204,88 @@ li {
 
 #sidebar-table a {
     color: #222
+}
+
+/* register form styling */
+.register {
+    background-color: #fff;
+    color: #222;
+    margin-top: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.register fieldset {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-color: #ddd;
+    margin-bottom: 0.5rem;
+}
+
+.register legend {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    padding: 0 0.5rem;
+}
+
+.register p {
+    margin-bottom: 0.5rem;
+}
+
+.register label {
+    font-size: calc(10px + 0.4vw);
+    display: block;
+}
+
+.register input {
+    padding: 0.1rem;
+}
+
+.helptext, .register ul {
+    display: block;
+    margin-top: 0.25rem;
+    color: #444;
+    font-style: italic;
+    font-size: calc(9px + 0.2vw);
+}
+
+.register li {
+    display: block;
+}
+
+.register button {
+    padding: 0.6rem 0.8rem;
+    font-size: calc(12px + 0.2vw);;
+    color: #fff;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.register a {
+    color: var(--color-secondary);
+}
+
+.errorlist {
+    padding: 0.2rem 0;
+    font-size: calc(12px + 0.2vw);
+    font-weight: bold;
+}
+
+.errorlist li {
+    display: block;
+    color: darkred;
+}
+
+/* message styling */
+.alert {
+    padding: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.alert-success {
+    background-color: #4CAF50;
 }
 
 /* responsive columns */

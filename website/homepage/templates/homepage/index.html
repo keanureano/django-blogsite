@@ -2,10 +2,16 @@
 
 {% block content %}
     {% for post in posts %}
-    <div class="post">
-        <h1>{{ post.title }}</h1>
-        <h3>By {{ post.author }} on {{ post.date_posted }}</h3>
-        <p>{{ post.content }}</p>
-    </div>
+    <article class="post">
+        <div class="metadata">
+            <h3>{{ post.author }}</h3>
+            <h6>{{ post.date_posted|date:'F d, Y' }}</h6>
+        </div>
+        <hr>
+        <div>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.content }}</p>
+        </div>
+    </article>
     {% endfor %}
 {% endblock %}
