@@ -2,8 +2,9 @@
 
 {% block content %}
     {% for post in posts %}
-    <article class="post">
+    <article class="container">
         <div class="metadata">
+            <img src="{{ post.author.profile.image.url }}">
             <h3>{{ post.author }}</h3>
             <h6>{{ post.date_posted|date:'F d, Y' }}</h6>
         </div>

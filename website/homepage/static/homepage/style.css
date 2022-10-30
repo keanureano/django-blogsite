@@ -114,8 +114,8 @@ li {
     width: 35%;
 }
 
-/* post styling */
-.post {
+/* container styling */
+.container {
     background-color: #fff;
     color: #222;
     margin-top: 1rem;
@@ -131,31 +131,37 @@ li {
     align-items: baseline;
 }
 
-.post hr {
+.metadata img {
+    width: 64px;
+    margin-right: 0.5rem;
+    border-radius: 18px;
+}
+
+.container hr {
     margin: 0.5rem 0;
 }
 
-.post h1 {
+.container h1 {
     font-weight: normal;
 }
 
-.post h3 {
+.container h2, .container h3 {
     color: var(--color-secondary);
     font-weight: normal;
     margin-right: 0.75rem;
 }
 
-.post h6 {
+.container h6 {
     color: #444;
     font-weight: normal;
 }
 
-.post p {
+.container p {
     margin-top: 0.5rem;
     color: #444;
 }
 
-.post:hover {
+.container:hover {
     transform: scale(1);
 }
 
@@ -217,15 +223,12 @@ li {
 
 .register fieldset {
     padding: 1rem;
-    border-radius: 0.5rem;
-    border-color: #ddd;
-    margin-bottom: 0.5rem;
+    border: none;
 }
 
 .register legend {
     font-size: 2rem;
     color: var(--color-secondary);
-    padding: 0 0.5rem;
 }
 
 .register p {
@@ -277,7 +280,7 @@ li {
     color: darkred;
 }
 
-/* message styling */
+/* alert styling */
 .alert {
     padding: 1rem;
     color: white;
@@ -288,6 +291,19 @@ li {
     background-color: #4CAF50;
 }
 
+/* user profile styling */
+.profile img {
+    width: calc(80px + 2vw);
+    height: auto;
+    border-radius: calc(20px + 1vw);
+    float:left;
+    margin-right: 1rem;
+}
+
+.profile hr {
+    margin-top: 1rem;
+    clear:both;
+}
 /* responsive columns */
 @media screen and (max-width: 900px) {
     .col {
