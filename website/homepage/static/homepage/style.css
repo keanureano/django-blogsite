@@ -134,7 +134,7 @@ li {
 .metadata img {
     width: 64px;
     margin-right: 0.5rem;
-    border-radius: 18px;
+    border-radius: 20%;
 }
 
 .container hr {
@@ -295,7 +295,7 @@ li {
 .profile img {
     width: calc(80px + 2vw);
     height: auto;
-    border-radius: calc(20px + 1vw);
+    border-radius: 20%;
     float:left;
     margin-right: 1rem;
 }
@@ -304,6 +304,21 @@ li {
     margin-top: 1rem;
     clear:both;
 }
+
+.profile fieldset {
+    border: none;
+}
+
+.profile button {
+    padding: 0.6rem 0.8rem;
+    margin-top: 0.5rem;
+    font-size: calc(12px + 0.2vw);;
+    color: #fff;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 0.5rem;
+}
+
 /* responsive columns */
 @media screen and (max-width: 900px) {
     .col {
