@@ -143,6 +143,7 @@ li {
 
 .container h1 {
     font-weight: normal;
+    color: var(--color-secondary);
 }
 
 .container h2, .container h3 {
@@ -158,6 +159,15 @@ li {
 
 .container p {
     margin-top: 0.5rem;
+    color: #444;
+}
+
+.container a {
+    color: var(--color-secondary);
+    transition: 0.1s ease;
+}
+
+.container a:hover {
     color: #444;
 }
 
@@ -317,6 +327,20 @@ li {
     background-color: var(--color-secondary);
     border: none;
     border-radius: 0.5rem;
+}
+
+/* page button styling */
+.pages {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.pages a {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-radius: 20%;
 }
 
 /* responsive columns */

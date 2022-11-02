@@ -1,0 +1,13 @@
+{% extends 'homepage/base.html' %}
+{% block content %}
+    <div class="register">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset>
+                <legend>Delete Post</legend>
+                <label style="margin-bottom: 1rem;">Are you sure you want to delete "{{ object.title }}"?</label>
+                <button type="submit" style="background-color:darkred;">Delete</button>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}

@@ -19,6 +19,11 @@
         {% endif %}
 </div>
 {% endif %}
+<article class="container">
+    <div class="metadata">
+        <h3>Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h3>
+    </div>
+</article>
 {% for post in posts %}
 <article class="container">
         <div class="metadata">

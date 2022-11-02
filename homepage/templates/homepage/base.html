@@ -56,12 +56,14 @@
         <div class="col right">
             <div class="sidebar">
                 <h1>The Sidebar</h1>
-                <p>Get the latest news about this website.</p>
+                <p>Useful features that you can do on this website.</p>
                 <table id="sidebar-table">
-                    <tr><td><a href="#">Latest Posts</a></td></tr>
-                    <tr><td><a href="#">Favorites</a></td></tr>
-                    <tr><td><a href="#">Announcements</a></td></tr>
-                    <tr><td><a href="#">Calendars</a></td></tr>
+                    <tr><td><a href="{% url 'post-create' %}"><strong>Create a Post</strong></a></td></tr>
+                    {% if user.is_authenticated %}
+                    <tr><td><a href="{% url 'user-posts' user.username %}">Your Recent Posts</a></td></tr>
+                    {% endif %}
+                    <tr><td><a href="{% url 'homepage-home' %}">Latest Posts</a></td></tr>
+                    <tr><td><a href="{% url 'profile' %}">View Profile</a></td></tr>
                 </table>
             </div>
         </div>
