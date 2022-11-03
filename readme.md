@@ -1,5 +1,5 @@
 # YOUR PROJECT TITLE
-#### Video Demo:  <https://youtu.be/tqHPGLuSMZc>
+#### Video Demo:  <https://youtu.be/No9tYZWeWU8>
 #### Description:
 
 Hello CS50, This project is a blog web-application that was made using Django framework. I've used Django instead of Flask, because it adapts better at larger scales, it is more of an industry standard, and because I wanted to learn a new web framework. Django also tends to be more organized in file management, and has more built-in functionalities, so I had less of a headache to implement common functions such as user registration, login, list views, etc.  
