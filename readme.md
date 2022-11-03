@@ -2,7 +2,13 @@
 #### Video Demo:  <https://youtu.be/No9tYZWeWU8>
 #### Description:
 
-Hello CS50, This project is a blog web-application that was made using Django framework. I've used Django instead of Flask, because it adapts better at larger scales, it is more of an industry standard, and because I wanted to learn a new web framework. Django also tends to be more organized in file management, and has more built-in functionalities, so I had less of a headache to implement common functions such as user registration, login, list views, etc.  
+#### PS: If the project is not working, download the repo here: <https://github.com/knreano/mywebsite>
+
+Hello CS50, This project is a blog web-application that was made using Django framework. I've used Django instead of Flask, because it adapts better at larger scales, it is more of an industry standard, and because I wanted to learn a new web framework. Django also tends to be more organized in file management, and has more built-in functionalities, so I had less of a headache to implement common functions such as user registration, login, list views, etc.
+
+High-level Python web framework Django promotes quick development and streamlined, practical design. It was created by seasoned programmers and handles a lot of the hassle associated with web development, freeing you up to concentrate on building your app without having to invent the wheel. It is open source and free. Django offers nearly everything developers would need "out of the box" and adheres to the "Batteries included" principle. Everything you require is included in the same "product," so everything functions in unison, adheres to the same design principles, and has comprehensive and current documentation.
+
+This project also uses Jinja, An engine for creating web templates. It bears the BSD License and was developed by Armin Ronacher. While offering Python-like expressions and guaranteeing that the templates are evaluated in a sandbox, Jinja is similar to the Django template engine. Since it is a text-based template language, any markup and source code can be produced with it. The Jinja template engine allows customization of tags, filters, tests, and globals. Jinja also enables the template designer to invoke functions with arguments on objects, which is not possible with the Django template engine. Jinja is Flask's default template engine and it is also used by Ansible, Trac, and Salt.
 
 In the project directory, there are multiple folders that correspond to multiple functions in the web app. The first one I want to address is the venv folder, which stands for virtual-environment; I've used a venv so that I can install python modules (like Django) directly into the folder, and I can upload the whole project as a package on github, with all the modules included.
 
