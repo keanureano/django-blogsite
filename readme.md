@@ -1,4 +1,4 @@
-# YOUR PROJECT TITLE
+# B.Log, a Django Blog Website
 #### Video Demo:  <https://youtu.be/No9tYZWeWU8>
 #### Description:
 
