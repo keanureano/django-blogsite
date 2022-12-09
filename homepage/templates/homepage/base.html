@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- custom title script -->
+    <!-- custom title -->
     {% if title %}
     <title>B.Log - {{ title }}</title>
     {% else %}
@@ -15,19 +15,21 @@
     {% endif %}
     <!-- homepage css -->
     <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
-    <!-- bootstrap icon css-->
-    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/icons/bootstrap-icons.css' %}">
+    <!-- night mode script -->
+    <script defer src="{% static 'homepage/nightmode.js' %}"></script>
 </head>
 
 <body>
     <!-- navbar -->
     <div class="navbar">
         <ul>
-            <a href="{% url 'homepage-home' %}" class="logo"><i class="bi bi-envelope-paper"></i>B.Log</a>
+            <a href="{% url 'homepage-home' %}" class="logo">B.Log</a>
             <li class="nav-link"><a href="{% url 'homepage-home' %}">Home</a></li>
             <li class="nav-link"><a href="{% url 'homepage-about' %}">About</a></li>
         </ul>
         <ul>
+            <!-- night mode button -->
+            <li class="nav-link"><a id="nightToggle" style="cursor: pointer;" onclick="func(0)">Night Mode</a></li> 
             {% if user.is_authenticated %}
                 <li class="nav-link"><a href="{% url 'profile' %}">Profile</a></li> 
                 <li class="nav-link"><a href="{% url 'logout' %}">Logout</a></li> 

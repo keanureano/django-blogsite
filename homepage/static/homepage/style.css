@@ -116,8 +116,6 @@ li {
 
 /* container styling */
 .container {
-    background-color: #fff;
-    color: #222;
     margin-top: 1rem;
     padding: 1rem;
     font-size: calc(10px + 0.5vw);
@@ -177,8 +175,6 @@ li {
 
 /* sidebar styling */
 .sidebar {
-    background-color: #fff;
-    color: #222;
     margin-top: 1.5rem;
     padding: 1rem;
     font-size: calc(10px + 0.5vw);
