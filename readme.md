@@ -2,8 +2,6 @@
 #### Video Demo:  <https://youtu.be/No9tYZWeWU8>
 #### Description:
 
-#### PS: If the project is not working, download the repo here: <https://github.com/knreano/mywebsite>
-
 Hello CS50, This project is a blog web-application that was made using Django framework. I've used Django instead of Flask, because it adapts better at larger scales, it is more of an industry standard, and because I wanted to learn a new web framework. Django also tends to be more organized in file management, and has more built-in functionalities, so I had less of a headache to implement common functions such as user registration, login, list views, etc.
 
 High-level Python web framework Django promotes quick development and streamlined, practical design. It was created by seasoned programmers and handles a lot of the hassle associated with web development, freeing you up to concentrate on building your app without having to invent the wheel. It is open source and free. Django offers nearly everything developers would need "out of the box" and adheres to the "Batteries included" principle. Everything you require is included in the same "product," so everything functions in unison, adheres to the same design principles, and has comprehensive and current documentation.
