@@ -17,6 +17,6 @@ There are three other Django apps; homepage, users, and media. Think of homepage
 #### How to start the website:
 ```
 venv/scripts/activate
-py manage.py livereload
+py manage.py livereload (optional)
 py manage.py runserver
 ```
